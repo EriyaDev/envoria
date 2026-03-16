@@ -29,7 +29,7 @@ import ButtonPrimary from '../micro/ButtonPrimary.vue'
       </div>
 
       <!-- RIGHT: Image -->
-      <div class="md:h-screen hidden lg:flex items-center justify-center w-full">
+      <div class="lg:h-screen hidden lg:flex items-center justify-center w-full">
         <img
           src="../../assets/images/hero/hero.webp"
           alt="Hero image"
