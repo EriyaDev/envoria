@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import ButtonPrimary from './micro/ButtonPrimary.vue'
 
 const navbar = ref(null)
 
@@ -26,7 +27,7 @@ onUnmounted(() => {
     id="header"
     class="navbar bg-primary-color flex flex-row items-center justify-between w-[90%] rounded-lg p-3 transition-all ease-out duration-500"
   >
-    <div class="logo"><img class="h-8" src="../assets/images/logo.svg" alt="" /></div>
+    <div class="logo"><img class="h-7" src="../assets/images/logo.svg" alt="" /></div>
 
     <nav>
       <ul class="flex flex-row items-center gap-10">
@@ -49,6 +50,6 @@ onUnmounted(() => {
       </ul>
     </nav>
 
-    <button class="button-primary">Contact Us</button>
+    <ButtonPrimary to="/contact">Contact Us</ButtonPrimary>
   </header>
 </template>
