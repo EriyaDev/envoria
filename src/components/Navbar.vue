@@ -24,7 +24,7 @@ onUnmounted(() => {
   <header
     ref="navbar"
     id="header"
-    class="navbar bg-primary-color flex flex-row items-center justify-between w-[90%] rounded-lg p-3 transition-all duration-500"
+    class="navbar bg-primary-color flex flex-row items-center justify-between w-[90%] rounded-lg p-3 transition-all ease-out duration-500"
   >
     <div class="logo"><img class="h-8" src="../assets/images/logo.svg" alt="" /></div>
 

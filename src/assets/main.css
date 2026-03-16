@@ -41,5 +41,5 @@ body {
 }
 
 .scrolled {
-  @apply !w-[70%] transition-all duration-500;
+  @apply !w-[70%] transition-all ease-out duration-500;
 }
