@@ -12,23 +12,34 @@
   --font-family-satoshi: 'Satoshi';
 
   /* Colors */
-  --color-primary-color: #ecf2f9;
-  --color-secondary-color: #ffffff;
-  --color-third-color: #222222;
+  --color-primary-color: #ffffff;
+  --color-secondary-color: #e2e4dd;
+  --color-third-color: #151515;
 
-  --color-accent-color: #4b5945;
+  --color-accent-color: #5fff5b;
   --color-accent-secondary-color: #29405b;
 
   --color-inactive-color: #a1a0a0;
   --color-border-color: #8d8a9d80;
-  --color-text-primary-color: #38315a;
+  --color-text-primary-color: #121212;
   --color-text-secondary-color: #8d8a9d;
 }
 
-* {
-  @apply m-0 p-0 box-border;
-}
-
+/* GENERAL */
 body {
   @apply font-family-inter;
+}
+
+/* BUTTONS */
+.button-primary {
+  @apply bg-accent-color text-black font-family-inter text-base  py-3 px-6 rounded-full hover:brightness-95 transition-all hover:cursor-pointer;
+}
+
+/* NAVIGATION */
+.nav-link-underline {
+  @apply absolute bottom-0 w-0 h-0.5 bg-accent-color group-hover:w-full transition-all duration-300;
+}
+
+.scrolled {
+  @apply !w-[70%] transition-all duration-500;
 }

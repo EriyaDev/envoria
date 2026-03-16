@@ -4,6 +4,8 @@ import Navbar from './components/Navbar.vue'
 </script>
 
 <template>
-  <Navbar />
+  <div class="fixed top-5 flex w-full items-center justify-center">
+    <Navbar />
+  </div>
   <RouterView />
 </template>

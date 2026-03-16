@@ -1,3 +1,5 @@
 <script setup></script>
 
-<template></template>
+<template>
+  <div class="h-[150vh] bg-blue-100"></div>
+</template>
