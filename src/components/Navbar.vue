@@ -13,7 +13,9 @@ const handleScroll = () => {
 }
 
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
+  if (window.innerWidth >= 1024) {
+    window.addEventListener('scroll', handleScroll)
+  } // Disable scroll effect on mobile
 })
 
 onUnmounted(() => {
@@ -25,12 +27,12 @@ onUnmounted(() => {
   <header
     ref="navbar"
     id="header"
-    class="navbar bg-primary-color flex flex-row items-center justify-between w-[90%] rounded-lg p-3 transition-all ease-out duration-500"
+    class="navbar bg-primary-color flex flex-row items-center justify-between w-[85%] rounded-lg p-3 transition-all ease-out duration-500"
   >
     <div class="logo"><img class="h-7" src="../assets/images/logo.svg" alt="" /></div>
 
     <nav>
-      <ul class="flex flex-row items-center gap-10">
+      <ul class="hidden lg:flex flex-row items-center gap-10">
         <li class="relative group">
           <router-link class="nav-link" to="/">Home</router-link>
           <div class="nav-link-underline"></div>
