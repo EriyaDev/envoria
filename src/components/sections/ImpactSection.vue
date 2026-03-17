@@ -10,8 +10,8 @@
           <div class="w-2 h-2 bg-accent-color rounded-full mr-2"></div>
           Our Impact</span
         >
-        <h2 class="medium-heading font-medium text-primary-color mt-10 xl:max-w-[20%]">
-          Numbers that speak for the <span class="text-accent-color">planet</span>.
+        <h2 class="medium-heading font-medium text-primary-color mt-10 xl:max-w-[23%]">
+          Numbers that speak for the <span class="text-accent-color">planet.</span>
         </h2>
         <p class="text-body text-primary-color/55 mt-3 md:max-w-[70%]">
           Every program, every volunteer, and every tree we plant is living proof that collective
