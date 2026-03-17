@@ -4,9 +4,11 @@ import ButtonPrimary from '../micro/ButtonPrimary.vue'
 
 <template>
   <section class="min-h-screen bg-secondary-color">
-    <div class="grid grid-cols-1 lg:grid-cols-2 container mx-auto gap-10 px-3 md:px-0">
+    <div class="grid grid-cols-5 lg:grid-cols-10 section-container gap-10 px-3 md:px-0">
       <!-- LEFT: Text -->
-      <div class="flex flex-col justify-center text-left py-16 h-screen w-full">
+      <div
+        class="flex flex-col justify-center text-left py-16 h-screen w-full col-span-5 lg:col-span-10 xl:col-span-5"
+      >
         <h1 class="text-display font-semibold mb-6">
           Innovation rooted in nature for a cleaner world
         </h1>
@@ -29,7 +31,9 @@ import ButtonPrimary from '../micro/ButtonPrimary.vue'
       </div>
 
       <!-- RIGHT: Image -->
-      <div class="lg:h-screen hidden lg:flex items-center justify-center w-full">
+      <div
+        class="lg:h-screen hidden xl:flex items-center justify-center w-full col-span-5 lg:col-span-3 xl:col-span-5"
+      >
         <img
           src="../../assets/images/hero/hero.webp"
           alt="Hero image"
