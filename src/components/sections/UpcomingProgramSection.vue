@@ -29,8 +29,8 @@
                             Active Now
                         </span>
 
-                        <div>
-
+                        <div class="flex flex-col gap-2">
+                            <h2 class="medium-heading"></h2>
                         </div>
                     </div>
                 </div>
