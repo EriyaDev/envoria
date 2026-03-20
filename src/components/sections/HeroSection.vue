@@ -1,5 +1,27 @@
 <script setup>
 import ButtonPrimary from '../micro/ButtonPrimary.vue'
+import { ref, onMounted, onUnmounted } from 'vue'
+import Typed from 'typed.js'
+
+const typedEl = ref(null)
+let typed = null
+
+onMounted(() => {
+  typed = new Typed(typedEl.value, {
+    strings: [
+      'Innovation rooted in nature for a cleaner world',
+      'Innovation rooted in nature for a cleaner world',
+    ],
+    typeSpeed: 60,
+    backSpeed: 40,
+    loop: true,
+    showCursor: false,
+  })
+})
+
+onUnmounted(() => {
+  typed.destroy()
+})
 </script>
 
 <template>
@@ -9,9 +31,7 @@ import ButtonPrimary from '../micro/ButtonPrimary.vue'
       <div
         class="flex flex-col justify-center text-left py-16 h-screen w-full col-span-5 lg:col-span-10 xl:col-span-5"
       >
-        <h1 class="text-display font-semibold mb-6">
-          Innovation rooted in nature for a cleaner world
-        </h1>
+        <span class="text-display font-semibold mb-6" ref="typedEl"></span>
         <p class="text-body text-gray-500 leading-relaxed mb-8 md:max-w-[70%]">
           Join a community of eco-enthusiasts taking meaningful actions to protect nature and create
           a greener future.
