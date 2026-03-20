@@ -1,7 +1,58 @@
-<script setup></script>
+<script setup>
+import { ref, onMounted } from 'vue'
+import gsap from 'gsap'
+
+let counter1 = ref(0)
+let counter2 = ref(0)
+let counter3 = ref(0)
+let counter4 = ref(0)
+
+onMounted(() => {
+  function counterTimeline() {
+    let tl = gsap.timeline({ defaults: { duration: 2, ease: 'power1.out' } })
+
+    tl.to(counter1, {
+      value: 98,
+      onUpdate: () => {
+        counter1.value = Math.floor(counter1.value)
+      },
+    })
+    tl.to(counter2, {
+      value: 900,
+      delay: -1.9,
+      onUpdate: () => {
+        counter2.value = Math.floor(counter2.value)
+      },
+    })
+    tl.to(counter3, {
+      value: 531,
+      delay: -1.8,
+      onUpdate: () => {
+        counter3.value = Math.floor(counter3.value)
+      },
+    })
+    tl.to(counter4, {
+      value: 10,
+      delay: -1.7,
+      onUpdate: () => {
+        counter4.value = Math.floor(counter4.value)
+      },
+    })
+  }
+
+  const mainTimeline = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.impact-section',
+      start: 'top 60%',
+    },
+  })
+
+  mainTimeline.add(counterTimeline())
+})
+</script>
 
 <template>
-  <section class="bg-third-color">
+  <section class="bg-third-color impact-section">
     <div class="section-container mx-auto py-10 md:px-0">
       <div class="flex flex-col">
         <span
@@ -25,21 +76,21 @@
         <div
           class="flex flex-col gap-2 bg-fourth-color px-8 py-12 rounded-t-lg md:rounded-lg lg:rounded-l-lg lg:rounded-r-none"
         >
-          <h3 class="text-display font-bold text-accent-color">98%</h3>
+          <h3 class="text-display font-bold text-accent-color">{{ counter1 }}%</h3>
           <p class="text-body font-semibold text-primary-color">Customer Satisfaction</p>
           <p class="text-small text-primary-color/55 line-clamp-2">
             Volunteers who return again and again to take action with us.
           </p>
         </div>
         <div class="flex flex-col gap-2 bg-fourth-color px-8 py-12 md:rounded-lg lg:rounded-none">
-          <h3 class="text-display font-bold text-accent-color">900k</h3>
+          <h3 class="text-display font-bold text-accent-color">{{ counter2 }}K+</h3>
           <p class="text-body font-semibold text-primary-color">Trees Planted</p>
           <p class="text-small text-primary-color/55 line-clamp-2">
             Endemic trees thriving across forests throughout the country.
           </p>
         </div>
         <div class="flex flex-col gap-2 bg-fourth-color px-8 py-12 md:rounded-lg lg:rounded-none">
-          <h3 class="text-display font-bold text-accent-color">531+</h3>
+          <h3 class="text-display font-bold text-accent-color">{{ counter3 }}+</h3>
           <p class="text-body font-semibold text-primary-color">Beaches Restored</p>
           <p class="text-small text-primary-color/55 line-clamp-2">
             Coastlines freed from plastic waste and pollution damage.
@@ -48,7 +99,7 @@
         <div
           class="flex flex-col gap-2 bg-fourth-color px-8 py-12 rounded-b-lg md:rounded-lg lg:rounded-r-lg lg:rounded-l-none"
         >
-          <h3 class="text-display font-bold text-accent-color">10+ Years</h3>
+          <h3 class="text-display font-bold text-accent-color">{{ counter4 }}+ Years</h3>
           <p class="text-body font-semibold text-primary-color">Years of Programs</p>
           <p class="text-small text-primary-color/55 line-clamp-2">
             Consistent, uninterrupted action since our founding in 2015.
