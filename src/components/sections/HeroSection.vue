@@ -8,14 +8,11 @@ let typed = null
 
 onMounted(() => {
   typed = new Typed(typedEl.value, {
-    strings: [
-      'Innovation rooted in nature for a cleaner world',
-      'Innovation rooted in nature for a cleaner world',
-    ],
+    strings: ['cleaner world', 'better environment', 'healthier earth'],
     typeSpeed: 60,
     backSpeed: 40,
     loop: true,
-    showCursor: false,
+    // showCursor: false,
   })
 })
 
@@ -31,7 +28,9 @@ onUnmounted(() => {
       <div
         class="flex flex-col justify-center text-left py-16 h-screen w-full col-span-5 lg:col-span-10 xl:col-span-5"
       >
-        <span class="text-display font-semibold mb-6" ref="typedEl"></span>
+        <h1 class="text-display font-semibold mb-6">
+          Innovation rooted in nature for a <span ref="typedEl"></span>
+        </h1>
         <p class="text-body text-gray-500 leading-relaxed mb-8 md:max-w-[70%]">
           Join a community of eco-enthusiasts taking meaningful actions to protect nature and create
           a greener future.
