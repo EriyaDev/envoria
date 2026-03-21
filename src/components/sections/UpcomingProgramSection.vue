@@ -15,7 +15,7 @@ import 'swiper/css/pagination'
                 <div class="flex flex-col gap-3 items-start">
                     <span
                         class="flex flex-row items-center w-fit px-3 py-1 bg-black/5 text-text-primary-color border border-[#2D612B]/13 text-small rounded-full font-semibold">
-                        <div class="w-2 h-2 bg-[#038B00] rounded-full mr-2"></div>
+                        <div class="w-2 h-2 bg-accent-color rounded-full mr-2"></div>
                         Upcoming Programs
                     </span>
                     <h2
@@ -29,7 +29,7 @@ import 'swiper/css/pagination'
                     </p>
                 </div>
 
-                <div class="hidden md:flex">
+                <div class="hidden lg:flex">
                     <ButtonSecondary to="/programs" class="">
                         <p class="text-body font-medium">See All Programs</p>
                         <img src="../../assets/icons/home/arrow-white.svg" alt="" />
@@ -295,7 +295,7 @@ import 'swiper/css/pagination'
                 </div>
             </div>
 
-            <div class="md:hidden mt-10 justify-center flex">
+            <div class="lg:hidden mt-10 justify-center flex">
                 <ButtonSecondary to="/programs" class="">
                     <p class="text-body font-medium">See All Programs</p>
                     <img src="../../assets/icons/home/arrow-white.svg" alt="" />
