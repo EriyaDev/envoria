@@ -2,6 +2,7 @@
 import ButtonPrimary from '../micro/ButtonPrimary.vue'
 import { ref, onMounted, onUnmounted } from 'vue'
 import Typed from 'typed.js'
+import gsap from 'gsap'
 
 const typedEl = ref(null)
 let typed = null
@@ -15,6 +16,42 @@ onMounted(() => {
     // showCursor: false,
   })
 })
+
+// onMounted(() => {
+//   const leftCol = document.querySelector('.hero-col-left')
+//   const rightCol = document.querySelector('.hero-col-right')
+
+//   const totalHeight = leftCol.scrollHeight / 2 // separuh = 1 set asli
+
+//   // LEFT — scroll ke atas
+//   gsap.to(leftCol, {
+//     y: -totalHeight,
+//     duration: 8,
+//     ease: 'none',
+//     repeat: -1,
+//     modifiers: {
+//       y: gsap.utils.unitize((y) => parseFloat(y) % totalHeight),
+//     },
+//   })
+
+//   // RIGHT — scroll ke bawah
+//   gsap.fromTo(
+//     rightCol,
+//     { y: -totalHeight },
+//     {
+//       y: 0,
+//       duration: 8,
+//       ease: 'none',
+//       repeat: -1,
+//       modifiers: {
+//         y: gsap.utils.unitize((y) => {
+//           const val = parseFloat(y) % totalHeight
+//           return val > 0 ? val - totalHeight : val
+//         }),
+//       },
+//     },
+//   )
+// })
 
 onUnmounted(() => {
   typed.destroy()
@@ -53,13 +90,31 @@ onUnmounted(() => {
       <div
         class="lg:h-screen hidden xl:flex items-center justify-center w-full col-span-5 lg:col-span-3 xl:col-span-5"
       >
-        <img
-          src="../../assets/images/hero/hero.webp"
-          alt="Hero image"
-          class="w-full h-full object-cover"
-          style="height: 100vh"
-        />
+        <div class="relative w-full h-full flex flex-row lg:gap-4 xl:gap-6 overflow-hidden z-0">
+          <!-- LEFT IMAGE COLLECTION -->
+          <div class="hero-col flex flex-col whitespace-nowrap top-0" id="left-col">
+            <img src="../../assets/images/hero/lt.webp" alt="" />
+            <img src="../../assets/images/hero/lm.webp" alt="" />
+            <img src="../../assets/images/hero/lb.webp" alt="" />
+            <!-- clone 1 -->
+            <img src="../../assets/images/hero/lt.webp" alt="" />
+            <img src="../../assets/images/hero/lm.webp" alt="" />
+            <img src="../../assets/images/hero/lb.webp" alt="" />
+          </div>
+          <!-- RIGHT IMAGE COLLECTION -->
+          <div class="hero-col flex flex-col whitespace-nowrap top-0" id="right-col">
+            <img src="../../assets/images/hero/rt.webp" alt="" />
+            <img src="../../assets/images/hero/rm.webp" alt="" />
+            <img src="../../assets/images/hero/rb.webp" alt="" />
+            <!-- clone 1 -->
+            <img src="../../assets/images/hero/rt.webp" alt="" />
+            <img src="../../assets/images/hero/rm.webp" alt="" />
+            <img src="../../assets/images/hero/rb.webp" alt="" />
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </template>
+
+<style></style>
