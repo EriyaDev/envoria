@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import ButtonPrimary from '../micro/ButtonPrimary.vue'
+</script>
 
 <template>
   <div class="section-container mx-auto py-10">
@@ -51,6 +53,13 @@
           building. We connect action to impact at every level.
         </p>
       </div>
+    </div>
+
+    <div class="flex w-full justify-center items-center mt-5">
+      <ButtonPrimary to="/about">
+        <img src="../../assets/icons/home/leaf-black.svg" alt="" />
+        <p class="text-body">More About Us</p></ButtonPrimary
+      >
     </div>
   </div>
 </template>
