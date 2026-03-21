@@ -4,6 +4,7 @@ import ImpactSection from '@/components/sections/ImpactSection.vue'
 import PurposeSection from '@/components/sections/PurposeSection.vue'
 import UpcomingProgramSection from '@/components/sections/UpcomingProgramSection.vue'
 import TransportationSection from '@/components/sections/TransportationSection.vue'
+import BlogSection from '@/components/sections/BlogSection.vue'
 </script>
 
 <template>
@@ -12,4 +13,5 @@ import TransportationSection from '@/components/sections/TransportationSection.v
   <PurposeSection />
   <UpcomingProgramSection />
   <TransportationSection />
+  <BlogSection />
 </template>
