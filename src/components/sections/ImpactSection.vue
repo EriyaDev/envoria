@@ -62,7 +62,7 @@ onMounted(() => {
           Our Impact</span
         >
         <h2
-          class="medium-heading font-medium text-primary-color lg:max-w-[30%] mt-10 xl:max-w-[25%] desktop:max-w-[23%]"
+          class="text-display font-medium text-primary-color lg:max-w-[30%] mt-10 xl:max-w-[40%] desktop:max-w-[23%]"
         >
           Numbers that speak for the <span class="text-accent-color">planet.</span>
         </h2>
@@ -74,36 +74,52 @@ onMounted(() => {
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0.5 mt-10">
         <div
-          class="flex flex-col gap-2 bg-fourth-color px-8 py-12 rounded-t-lg md:rounded-lg lg:rounded-l-lg lg:rounded-r-none"
+          class="relative group flex overflow-hidden flex-col gap-2 bg-fourth-color px-8 py-12 rounded-t-lg md:rounded-lg lg:rounded-l-lg lg:rounded-r-none"
         >
           <h3 class="text-display font-bold text-accent-color">{{ counter1 }}%</h3>
           <p class="text-body font-semibold text-primary-color">Customer Satisfaction</p>
           <p class="text-small text-primary-color/55 line-clamp-2">
             Volunteers who return again and again to take action with us.
           </p>
+          <div
+            class="absolute bottom-0 left-0 h-1 bg-accent-color w-0 group-hover:w-full transition-all duration-300"
+          ></div>
         </div>
-        <div class="flex flex-col gap-2 bg-fourth-color px-8 py-12 md:rounded-lg lg:rounded-none">
+        <div
+          class="relative group flex overflow-hidden flex-col gap-2 bg-fourth-color px-8 py-12 md:rounded-lg lg:rounded-none"
+        >
           <h3 class="text-display font-bold text-accent-color">{{ counter2 }}K+</h3>
           <p class="text-body font-semibold text-primary-color">Trees Planted</p>
           <p class="text-small text-primary-color/55 line-clamp-2">
             Endemic trees thriving across forests throughout the country.
           </p>
+          <div
+            class="absolute bottom-0 left-0 h-1 bg-accent-color w-0 group-hover:w-full transition-all duration-300"
+          ></div>
         </div>
-        <div class="flex flex-col gap-2 bg-fourth-color px-8 py-12 md:rounded-lg lg:rounded-none">
+        <div
+          class="relative group flex overflow-hidden flex-col gap-2 bg-fourth-color px-8 py-12 md:rounded-lg lg:rounded-none"
+        >
           <h3 class="text-display font-bold text-accent-color">{{ counter3 }}+</h3>
           <p class="text-body font-semibold text-primary-color">Beaches Restored</p>
           <p class="text-small text-primary-color/55 line-clamp-2">
             Coastlines freed from plastic waste and pollution damage.
           </p>
+          <div
+            class="absolute bottom-0 left-0 h-1 bg-accent-color w-0 group-hover:w-full transition-all duration-300"
+          ></div>
         </div>
         <div
-          class="flex flex-col gap-2 bg-fourth-color px-8 py-12 rounded-b-lg md:rounded-lg lg:rounded-r-lg lg:rounded-l-none"
+          class="relative group flex overflow-hidden flex-col gap-2 bg-fourth-color px-8 py-12 rounded-b-lg md:rounded-lg lg:rounded-r-lg lg:rounded-l-none"
         >
           <h3 class="text-display font-bold text-accent-color">{{ counter4 }}+ Years</h3>
           <p class="text-body font-semibold text-primary-color">Years of Programs</p>
           <p class="text-small text-primary-color/55 line-clamp-2">
             Consistent, uninterrupted action since our founding in 2015.
           </p>
+          <div
+            class="absolute bottom-0 left-0 h-1 bg-accent-color w-0 group-hover:w-full transition-all duration-300"
+          ></div>
         </div>
       </div>
     </div>
