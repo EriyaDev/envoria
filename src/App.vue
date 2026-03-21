@@ -44,7 +44,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="fixed top-5 flex w-full items-center justify-center">
+  <div class="fixed top-5 flex w-full items-center justify-center z-50">
     <Navbar />
   </div>
   <RouterView />
