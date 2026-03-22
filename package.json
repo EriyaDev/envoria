@@ -13,6 +13,7 @@
     "@tailwindcss/vite": "^4.2.1",
     "gsap": "^3.14.2",
     "lenis": "^1.3.19",
+    "remixicon": "^4.9.1",
     "swiper": "^12.1.2",
     "tailwindcss": "^4.2.1",
     "typed.js": "^3.0.0",

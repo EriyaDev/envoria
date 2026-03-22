@@ -7,6 +7,7 @@ import TransportationSection from '@/components/sections/TransportationSection.v
 import BlogSection from '@/components/sections/BlogSection.vue'
 import VideoSection from '@/components/sections/VideoSection.vue'
 import ContactSection from '@/components/sections/ContactSection.vue'
+import TestimonialSection from '@/components/sections/TestimonialSection.vue'
 </script>
 
 <template>
@@ -18,4 +19,5 @@ import ContactSection from '@/components/sections/ContactSection.vue'
   <BlogSection />
   <VideoSection />
   <ContactSection />
+  <TestimonialSection />
 </template>
