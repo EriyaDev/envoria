@@ -6,6 +6,7 @@ import UpcomingProgramSection from '@/components/sections/UpcomingProgramSection
 import TransportationSection from '@/components/sections/TransportationSection.vue'
 import BlogSection from '@/components/sections/BlogSection.vue'
 import VideoSection from '@/components/sections/VideoSection.vue'
+import ContactSection from '@/components/sections/ContactSection.vue'
 </script>
 
 <template>
@@ -16,4 +17,5 @@ import VideoSection from '@/components/sections/VideoSection.vue'
   <TransportationSection />
   <BlogSection />
   <VideoSection />
+  <ContactSection />
 </template>
