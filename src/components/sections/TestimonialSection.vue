@@ -1,5 +1,6 @@
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
+import gsap from 'gsap'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 
@@ -93,6 +94,33 @@ const slides = ref([
       'We operate across multiple sites and Envoria manages all of them without missing a beat. One platform, one team, zero headaches.',
   },
 ])
+
+let xPercent = 0
+
+onMounted(() => {
+  let currentScroll = 0
+  let isScrollingDown = true
+
+  let tween = gsap
+    .to('.marquee__part', { xPercent: -100, repeat: -1, duration: 20, ease: 'linear' })
+    .totalProgress(0.5)
+
+  gsap.set('.marquee__inner', { xPercent: -50 })
+
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset > currentScroll) {
+      isScrollingDown = true
+    } else {
+      isScrollingDown = false
+    }
+
+    gsap.to(tween, {
+      timeScale: isScrollingDown ? 1 : -1,
+    })
+
+    currentScroll = window.pageYOffset
+  })
+})
 </script>
 
 <template>
@@ -184,7 +212,7 @@ const slides = ref([
         :breakpoints="{
           640: { slidesPerView: 1.5, spaceBetween: 25 },
           768: { slidesPerView: 2.1, spaceBetween: 25 },
-          1024: { slidesPerView: 3.5, spaceBetween: 25 },
+          1024: { slidesPerView: 3.2, spaceBetween: 25 },
           1440: { slidesPerView: 4, spaceBetween: 25 },
         }"
         :modules="modules"
@@ -213,6 +241,74 @@ const slides = ref([
           </div>
         </SwiperSlide>
       </Swiper>
+
+      <div class="w-[85%] mx-auto mt-10">
+        <section class="marquee bg-card-color rounded-2xl relative">
+          <div class="marquee__inner" aria-hidden="true" ref="inner">
+            <div class="marquee__part">
+              <img
+                src="../../assets/images/testimonial/brand/brand-logo-batch.svg"
+                class="pr-32"
+                alt=""
+              />
+            </div>
+            <div class="marquee__part">
+              <img
+                src="../../assets/images/testimonial/brand/brand-logo-batch.svg"
+                class="pr-32"
+                alt=""
+              />
+            </div>
+            <div class="marquee__part">
+              <img
+                src="../../assets/images/testimonial/brand/brand-logo-batch.svg"
+                class="pr-32"
+                alt=""
+              />
+            </div>
+            <div class="marquee__part">
+              <img
+                src="../../assets/images/testimonial/brand/brand-logo-batch.svg"
+                class="pr-32"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="absolute h-full top-0 left-0 w-[100px] bg-linear-to-r from-card-color to-transparent pointer-events-none"
+          ></div>
+          <div
+            class="absolute h-full top-0 right-0 w-[100px] bg-linear-to-l from-card-color to-transparent pointer-events-none"
+          ></div>
+        </section>
+      </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.marquee__part {
+  flex-shrink: 0;
+  padding: 0 4px;
+  font-smooth: always;
+}
+
+.marquee {
+  color: #eee;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.667vw;
+  padding: 32px 0;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee__inner {
+  -webkit-font-smoothing: antialiased;
+  width: fit-content;
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+}
+</style>
