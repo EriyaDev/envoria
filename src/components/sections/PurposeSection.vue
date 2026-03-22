@@ -41,7 +41,9 @@ import ButtonPrimary from '../micro/ButtonPrimary.vue'
           </p>
         </div>
       </div>
-      <div class="flex flex-col bg-fourth-color rounded-2xl px-7 py-10 justify-between">
+      <div
+        class="flex flex-col bg-fourth-color rounded-2xl px-7 py-10 justify-between md:col-span-2 lg:col-span-1"
+      >
         <div class="flex flex-col">
           <h4 class="small-heading uppercase text-primary-color">OUR MISSION</h4>
           <h3 class="medium-heading font-bold text-accent-color uppercase">
