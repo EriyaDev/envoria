@@ -1,5 +1,44 @@
 <script setup>
+import gsap from 'gsap'
 import ButtonPrimary from '../micro/ButtonPrimary.vue'
+import { onMounted } from 'vue'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
+
+onMounted(() => {
+  gsap.from('.purpose-1', {
+    scrollTrigger: {
+      trigger: '.purpose-1',
+      start: 'top 80%',
+      end: 'bottom 60%',
+      scrub: true,
+    },
+    y: 70,
+    duration: 1,
+  })
+  gsap.from('.purpose-2', {
+    scrollTrigger: {
+      trigger: '.purpose-2',
+      start: 'top 80%',
+      end: 'bottom 60%',
+      scrub: true,
+    },
+    y: 20,
+    duration: 1,
+  })
+
+  gsap.from('.purpose-3', {
+    scrollTrigger: {
+      trigger: '.purpose-1',
+      start: 'top 80%',
+      end: 'bottom 60%',
+      scrub: true,
+    },
+    y: 80,
+    duration: 1,
+  })
+})
 </script>
 
 <template>
@@ -21,17 +60,17 @@ import ButtonPrimary from '../micro/ButtonPrimary.vue'
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-      <div class="flex flex-col bg-fourth-color rounded-2xl px-7 py-10 justify-between">
+      <div class="purpose-1 flex flex-col bg-fourth-color rounded-2xl px-7 py-10 justify-between">
         <div class="flex flex-col">
           <h4 class="small-heading uppercase text-primary-color">WE HELP OVER</h4>
-          <h3 class="text-display font-bold text-accent-color mt-7">3.1Million+</h3>
+          <h3 class="text-display font-bold text-accent-color mt-7">10M+ PEOPLE</h3>
         </div>
         <p class="text-body text-primary-color line-clamp-5 mt-3">
           Helping communities around the world gain access to sustainable resources, environmental
           programs, and initiatives that improve quality of life while protecting the planet.
         </p>
       </div>
-      <div class="relative bg-fourth-color rounded-2xl">
+      <div class="purpose-2 relative bg-fourth-color rounded-2xl">
         <img src="../../assets/images/purpose/card.webp" alt="" class="w-full h-full rounded-2xl" />
         <div class="absolute bottom-10 w-full px-5">
           <h4 class="small-heading font-semibold uppercase text-primary-color">VISION</h4>
@@ -42,7 +81,7 @@ import ButtonPrimary from '../micro/ButtonPrimary.vue'
         </div>
       </div>
       <div
-        class="flex flex-col bg-fourth-color rounded-2xl px-7 py-10 justify-between md:col-span-2 lg:col-span-1"
+        class="purpose-3 flex flex-col bg-fourth-color rounded-2xl px-7 py-10 justify-between md:col-span-2 lg:col-span-1"
       >
         <div class="flex flex-col">
           <h4 class="small-heading uppercase text-primary-color">OUR MISSION</h4>
@@ -57,7 +96,7 @@ import ButtonPrimary from '../micro/ButtonPrimary.vue'
       </div>
     </div>
 
-    <div class="flex w-full justify-center items-center mt-5">
+    <div class="flex w-full justify-center items-center mt-10">
       <ButtonPrimary to="/about">
         <img src="../../assets/icons/home/leaf-black.svg" alt="" />
         <p class="text-body">More About Us</p></ButtonPrimary
