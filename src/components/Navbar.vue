@@ -52,6 +52,13 @@ onUnmounted(() => {
       </ul>
     </nav>
 
-    <ButtonPrimary to="/contact">Contact Us</ButtonPrimary>
+    <div class="flex flex-row items-center gap-5">
+      <button v-on:click="" class="last:hidden">
+        <i class="ri-menu-3-line text-2xl"></i>
+      </button>
+      <div class="hidden lg:flex">
+        <ButtonPrimary to="/contact">Contact Us</ButtonPrimary>
+      </div>
+    </div>
   </header>
 </template>
