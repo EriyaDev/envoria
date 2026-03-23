@@ -1,6 +1,9 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 let counter1 = ref(0)
 let counter2 = ref(0)
@@ -8,46 +11,64 @@ let counter3 = ref(0)
 let counter4 = ref(0)
 
 onMounted(() => {
-  function counterTimeline() {
-    let tl = gsap.timeline({ defaults: { duration: 2, ease: 'power1.out' } })
+  // function counterTimeline() {
+  // let tl = gsap.timeline({ defaults: { duration: 2, ease: 'power1.out' } })
 
-    tl.to(counter1, {
-      value: 98,
-      onUpdate: () => {
-        counter1.value = Math.floor(counter1.value)
-      },
-    })
-    tl.to(counter2, {
-      value: 900,
-      delay: -1.9,
-      onUpdate: () => {
-        counter2.value = Math.floor(counter2.value)
-      },
-    })
-    tl.to(counter3, {
-      value: 531,
-      delay: -1.8,
-      onUpdate: () => {
-        counter3.value = Math.floor(counter3.value)
-      },
-    })
-    tl.to(counter4, {
-      value: 10,
-      delay: -1.7,
-      onUpdate: () => {
-        counter4.value = Math.floor(counter4.value)
-      },
-    })
-  }
-
-  const mainTimeline = gsap.timeline({
+  gsap.to(counter1, {
+    value: 98,
+    duration: 2,
     scrollTrigger: {
       trigger: '.impact-section',
       start: 'top 60%',
     },
+    onUpdate: () => {
+      counter1.value = Math.floor(counter1.value)
+    },
   })
+  gsap.to(counter2, {
+    value: 900,
+    duration: 2,
+    scrollTrigger: {
+      trigger: '.impact-section',
+      start: 'top 60%',
+    },
+    onUpdate: () => {
+      counter2.value = Math.floor(counter2.value)
+    },
+  })
+  gsap.to(counter3, {
+    value: 531,
+    duration: 2,
+    scrollTrigger: {
+      trigger: '.impact-section',
+      start: 'top 60%',
+    },
+    onUpdate: () => {
+      counter3.value = Math.floor(counter3.value)
+    },
+  })
+  gsap.to(counter4, {
+    value: 10,
+    duration: 2,
+    scrollTrigger: {
+      trigger: '.impact-section',
+      start: 'top 60%',
+    },
+    onUpdate: () => {
+      counter4.value = Math.floor(counter4.value)
+    },
+  })
+  // }
 
-  mainTimeline.add(counterTimeline())
+  // const mainTimeline = gsap.timeline({
+  //   scrollTrigger: {
+  //     trigger: '.impact-section',
+  //     start: 'top 60%',
+  //   },
+  // })
+
+  // mainTimeline.add(counterTimeline())
+  // mainTimeline.play()
 })
 </script>
 
