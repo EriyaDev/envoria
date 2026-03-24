@@ -9,6 +9,7 @@ import VideoSection from '@/components/sections/VideoSection.vue'
 import ContactSection from '@/components/sections/ContactSection.vue'
 import TestimonialSection from '@/components/sections/TestimonialSection.vue'
 import CallToAction from '@/components/sections/CallToAction.vue'
+import Footer from '@/components/sections/Footer.vue'
 </script>
 
 <template>
@@ -22,4 +23,5 @@ import CallToAction from '@/components/sections/CallToAction.vue'
   <ContactSection />
   <TestimonialSection />
   <CallToAction />
+  <Footer />
 </template>
