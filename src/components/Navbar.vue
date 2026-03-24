@@ -3,6 +3,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import ButtonPrimary from './micro/ButtonPrimary.vue'
 
 const navbar = ref(null)
+const mobileNabvar = ref(null)
 
 const handleScroll = () => {
   if (window.scrollY > 50) {
@@ -10,6 +11,10 @@ const handleScroll = () => {
   } else {
     navbar.value.classList.remove('scrolled')
   }
+}
+
+const handleNavbar = () => {
+  mobileNabvar.value.classList.toggle('!h-[240px]')
 }
 
 onMounted(() => {
@@ -52,8 +57,33 @@ onUnmounted(() => {
       </ul>
     </nav>
 
+    <nav
+      id="nav-mobile"
+      ref="mobileNabvar"
+      class="absolute top-11 left-0 right-0 overflow-hidden h-0 transition-all duration-700 ease-out"
+    >
+      <ul class="flex flex-col gap-5 bg-primary-color rounded-b-lg p-10 w-[85%] mx-auto z-40">
+        <li class="relative w-fit group">
+          <router-link class="nav-link" to="/">Home</router-link>
+          <div class="nav-link-underline"></div>
+        </li>
+        <li class="relative w-fit group">
+          <router-link class="nav-link" to="/about">About Us</router-link>
+          <div class="nav-link-underline"></div>
+        </li>
+        <li class="relative w-fit group">
+          <router-link class="nav-link" to="/program">Program</router-link>
+          <div class="nav-link-underline"></div>
+        </li>
+        <li class="relative w-fit group">
+          <router-link class="nav-link" to="/blog">Blog</router-link>
+          <div class="nav-link-underline"></div>
+        </li>
+      </ul>
+    </nav>
+
     <div class="flex flex-row items-center gap-5">
-      <button v-on:click="" class="last:hidden">
+      <button v-on:click="handleNavbar" class="lg:hidden">
         <i class="ri-menu-3-line text-2xl"></i>
       </button>
       <div class="hidden lg:flex">
