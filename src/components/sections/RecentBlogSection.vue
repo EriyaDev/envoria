@@ -26,30 +26,52 @@ const blogs = [
         image: new URL('../../assets/images/blog/image-3.webp', import.meta.url).href,
 
     },
+    {
+        id: 4,
+        title: "Indonesia’s Most Endangered Ecosystems And What We Can Do About It",
+        category: "Biodiversity",
+        date: "28 Feb 2026",
+        image: new URL('../../assets/images/blog/image-1.webp', import.meta.url).href,
+    },
+    {
+        id: 5,
+        title: "The Plastic Crisis In Our Oceans Is Worse Than You Think",
+        category: "Marine",
+        date: "22 Feb 2026",
+        image: new URL('../../assets/images/blog/image-1.webp', import.meta.url).href,
+    },
+    {
+        id: 6,
+        title: "How To Build A Zero-Waste Kitchen In 30 Days",
+        category: "Lifestyle",
+        date: "8 Feb 2026",
+        image: new URL('../../assets/images/blog/image-1.webp', import.meta.url).href,
+    }
 ];
 </script>
 
 <template>
-    <div class="bg-card-color py-10">
+    <div class="py-10">
         <div class="section-container mx-auto">
-            <div class="flex items-end justify-between">
+            <div class="flex flex-col gap-5">
                 <div class="flex flex-col gap-3 items-start">
                     <span
                         class="flex flex-row items-center w-fit px-3 py-1 bg-black/5 text-text-primary-color border border-[#2D612B]/13 text-small rounded-full font-semibold">
                         <div class="w-2 h-2 bg-accent-color rounded-full mr-2"></div>
-                        Our Blog
+                        Recent Blog & Articles
                     </span>
                     <h2 class="medium-heading font-medium text-text-primary-color mt-10 text-start">
-                        Inspiring insights for a <br>
-                        smarter, <span class="text-text-primary-color/55">greener</span> future
+                        Latest <span class="text-text-primary-color/55">insights</span> and <br> <span
+                            class="text-text-primary-color/55">trends</span>
                     </h2>
                 </div>
 
-                <div class="hidden md:flex">
-                    <ButtonSecondary to="/blog" class="">
-                        <p class="text-body font-medium">View All Blog</p>
-                        <img src="../../assets/icons/home/arrow-white.svg" alt="" />
-                    </ButtonSecondary>
+                <div class="flex items-center gap-4">
+                    <button class="button-secondary">All Topics</button>
+                    <button class="button-outline">Zero Waste</button>
+                    <button class="button-outline">Global Warming</button>
+                    <button class="button-outline">Lifestyle</button>
+                    <button class="button-primary">+9 More</button>
                 </div>
             </div>
 
@@ -58,11 +80,10 @@ const blogs = [
                 <BlogCard v-for="blog in blogs" :key="blog.id" :blog="blog" />
             </div>
 
-            <div class="md:hidden mt-10 justify-center flex">
-                <ButtonSecondary to="/blog" class="">
-                    <p class="text-body font-medium">View All Blog</p>
-                    <img src="../../assets/icons/home/arrow-white.svg" alt="" />
-                </ButtonSecondary>
+            <div class="mt-10 justify-center flex">
+                <ButtonPrimary to="/blog" class="">
+                    <p class="text-body font-medium">Load More</p>
+                </ButtonPrimary>
             </div>
         </div>
     </div>
