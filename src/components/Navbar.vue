@@ -83,7 +83,7 @@ onUnmounted(() => {
     </nav>
 
     <div class="flex flex-row items-center gap-5">
-      <button v-on:click="handleNavbar" class="last:hidden">
+      <button v-on:click="handleNavbar" class="lg:hidden">
         <i class="ri-menu-3-line text-2xl"></i>
       </button>
       <div class="hidden lg:flex">
