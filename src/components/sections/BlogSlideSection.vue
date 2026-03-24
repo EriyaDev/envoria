@@ -15,7 +15,7 @@ const nextBtn = ref(null)
 <template>
     <div class="bg-[#F0F0F0] py-10">
         <div class="section-container mx-auto">
-            <div class="flex items-end justify-between">
+            <div class="flex md:flex-row flex-col items-start gap-5 md:gap-0 md:items-end justify-between">
                 <div class="flex flex-col gap-3 items-start">
                     <span
                         class="flex flex-row items-center w-fit px-3 py-1 bg-black/5 text-text-primary-color border border-[#2D612B]/13 text-small rounded-full font-semibold">
@@ -42,17 +42,17 @@ const nextBtn = ref(null)
 
             <!-- versi pake slider -->
             <div class="mt-10">
-                <Swiper :modules="[Navigation, Pagination, Autoplay]" :slides-per-view="1" :space-between="20"
-                    :navigation="{ prevEl: prevBtn, nextEl: nextBtn }" :pagination="{ clickable: true }"
+                <Swiper :modules="[Navigation, Autoplay]" :slides-per-view="1" :space-between="20"
+                    :navigation="{ prevEl: prevBtn, nextEl: nextBtn }" autoplay="{ delay: 3000 }"
                     class="w-full rounded-lg">
                     <SwiperSlide>
-                        <div class="grid grid-cols-10 gap-5">
-                            <div class="col-span-6">
+                        <div class="grid grid-cols-1 xl:grid-cols-10 gap-5">
+                            <div class="xl:col-span-6">
                                 <img src="../../assets/images/all-blog/image-1.png" alt=""
                                     class="h-full w-full object-cover rounded-xl">
                             </div>
 
-                            <div class="col-span-4 flex flex-col gap-3 bg-primary-color p-8 rounded-lg">
+                            <div class="xl:col-span-4 flex flex-col gap-3 bg-primary-color p-8 rounded-lg">
                                 <span class="flex items-center gap-2">
                                     <div class="py-2 px-4 rounded-3xl bg-[#F0F0F0] text-center">
                                         <p class="text-small font-medium text-[#313131]">Zero Waste</p>
@@ -60,9 +60,12 @@ const nextBtn = ref(null)
 
                                     <p class="text-small font-medium">12 Mar 2026</p>
                                 </span>
-                                <h2 class="medium-heading">Why Zero Waste Is More Than a Trend: A Complete Guide to
+                                <h2 class="medium-heading font-medium line-clamp-3">Why Zero Waste Is More Than a Trend:
+                                    A Complete
+                                    Guide to
                                     Low-Impact Living</h2>
-                                <p class="text-small font-medium line-clamp-5">Zero waste isn't just a lifestyle choice.
+                                <p class="text-small font-medium line-clamp-5 text-[#464646]">Zero waste isn't just a
+                                    lifestyle choice.
                                     it's a global movement reshaping how we consume, discard, and think about our
                                     planet. In this guide, we break down what low-impact living really means, why it
                                     matters more than ever, and how small daily changes can lead to a massive collective
@@ -73,13 +76,13 @@ const nextBtn = ref(null)
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div class="grid grid-cols-10 gap-5">
-                            <div class="col-span-6">
+                        <div class="grid grid-cols-1 xl:grid-cols-10 gap-5">
+                            <div class="xl:col-span-6">
                                 <img src="../../assets/images/all-blog/image-1.png" alt=""
                                     class="h-full w-full object-cover rounded-xl">
                             </div>
 
-                            <div class="col-span-4 flex flex-col gap-3 bg-primary-color p-8 rounded-lg">
+                            <div class="xl:col-span-4 flex flex-col gap-3 bg-primary-color p-8 rounded-lg">
                                 <span class="flex items-center gap-2">
                                     <div class="py-2 px-4 rounded-3xl bg-[#F0F0F0] text-center">
                                         <p class="text-small font-medium text-[#313131]">Zero Waste</p>
@@ -87,9 +90,12 @@ const nextBtn = ref(null)
 
                                     <p class="text-small font-medium">12 Mar 2026</p>
                                 </span>
-                                <h2 class="medium-heading">Why Zero Waste Is More Than a Trend: A Complete Guide to
+                                <h2 class="medium-heading font-medium line-clamp-3">Why Zero Waste Is More Than a Trend:
+                                    A Complete
+                                    Guide to
                                     Low-Impact Living</h2>
-                                <p class="text-small font-medium line-clamp-5">Zero waste isn't just a lifestyle choice.
+                                <p class="text-small font-medium line-clamp-5 text-[#464646]">Zero waste isn't just a
+                                    lifestyle choice.
                                     it's a global movement reshaping how we consume, discard, and think about our
                                     planet. In this guide, we break down what low-impact living really means, why it
                                     matters more than ever, and how small daily changes can lead to a massive collective

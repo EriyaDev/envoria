@@ -9,7 +9,7 @@ import 'swiper/css/pagination'
 </script>
 
 <template>
-    <div class="bg-[#f5f5f5] py-10">
+    <div class="bg-card-color py-10">
         <div class="section-container mx-auto">
             <div class="flex items-end justify-between">
                 <div class="flex flex-col gap-3 items-start">
