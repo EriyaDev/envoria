@@ -80,7 +80,7 @@ onMounted(() => {
             </div>
 
             <div class="w-[85%] mx-auto mt-10">
-                <section class="marquee bg-card-color rounded-2xl relative">
+                <section class="marquee bg-primary-color rounded-2xl relative">
                     <div class="marquee__inner" aria-hidden="true" ref="inner">
                         <div class="marquee__part">
                             <img src="../../assets/images/testimonial/brand/brand-logo-batch.svg" class="pr-32"

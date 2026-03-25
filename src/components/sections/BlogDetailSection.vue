@@ -25,7 +25,7 @@
         </div>
     </div>
     <div class="py-10 bg-primary-color">
-        <div class="max-w-[95%] md:max-w-[90%] lg:max-w-[70%] 2xl:max-w-360 mx-auto">
+        <div class="max-w-[95%] md:max-w-[90%] lg:max-w-[70%] mx-auto">
             <div class="flex flex-col gap-10">
                 <div class="flex flex-col gap-5">
                     <h4 class="small-heading font-semibold">Indonesia's Most Endangered Ecosystems and What We Can Do
