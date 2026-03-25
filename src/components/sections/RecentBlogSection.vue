@@ -76,7 +76,7 @@ const blogs = [
             </div>
 
             <!-- versi gapake slider -->
-            <div class="grid grid-cols-1 md:grid-cols-2 mt-10 xl:grid-cols-3 gap-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 mt-10 xl:grid-cols-3 gap-10 md:gap-5">
                 <BlogCard v-for="blog in blogs" :key="blog.id" :blog="blog" />
             </div>
 
