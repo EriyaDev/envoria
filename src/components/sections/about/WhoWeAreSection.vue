@@ -151,12 +151,18 @@ onMounted(() => {
           Who we are</span
         >
         <h2
+          data-aos="fade-up"
+          data-aos-delay="00"
           class="text-display font-medium text-text-text-primary-color mt-10 text-center max-w-[90%] md:max-w-[70%] xl:max-w-[60%]"
         >
           Smart waste transport solutions for a
           <span class="text-text-text-primary-color/55">cleaner, greener world</span>
         </h2>
-        <p class="text-body lg:max-w-[60%] text-center opacity-75">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="text-body lg:max-w-[60%] text-center opacity-75"
+        >
           At Envoria, we believe waste movement should be as kind to the planet as it is efficient
           for business. Born from a vision to create smarter, sustainable waste logistics, we set
           out to challenge the way waste is collected, transported, and recycled.
@@ -164,6 +170,8 @@ onMounted(() => {
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
         <div
+          data-aos="fade-up"
+          data-aos-delay="00"
           class="relative group flex overflow-hidden flex-col gap-2 bg-card-color px-8 py-12 rounded-t-lg md:rounded-lg lg:rounded-l-lg lg:rounded-r-none"
         >
           <h3 class="text-display font-bold text-text-text-primary-color">{{ counter1 }}%</h3>
@@ -173,6 +181,8 @@ onMounted(() => {
           </p>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-delay="200"
           class="relative group flex overflow-hidden flex-col gap-2 bg-card-color px-8 py-12 md:rounded-lg lg:rounded-none"
         >
           <h3 class="text-display font-bold text-text-text-primary-color">
@@ -184,6 +194,8 @@ onMounted(() => {
           </p>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-delay="400"
           class="relative group flex overflow-hidden flex-col gap-2 bg-card-color px-8 py-12 rounded-b-lg md:rounded-lg lg:rounded-r-lg lg:rounded-l-none md:col-span-2 lg:col-span-1"
         >
           <h3 class="text-display font-bold text-text-text-primary-color">{{ counter4 }}+ Years</h3>
