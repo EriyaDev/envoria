@@ -97,7 +97,7 @@ onMounted(() => {
     value: 98,
     duration: 2,
     scrollTrigger: {
-      trigger: '.impact-section',
+      trigger: '.who-we-are',
       start: 'top 60%',
     },
     onUpdate: () => {
@@ -108,7 +108,7 @@ onMounted(() => {
     value: 900,
     duration: 2,
     scrollTrigger: {
-      trigger: '.impact-section',
+      trigger: '.who-we-are',
       start: 'top 60%',
     },
     onUpdate: () => {
@@ -119,7 +119,7 @@ onMounted(() => {
     value: 531,
     duration: 2,
     scrollTrigger: {
-      trigger: '.impact-section',
+      trigger: '.who-we-are',
       start: 'top 60%',
     },
     onUpdate: () => {
@@ -130,7 +130,7 @@ onMounted(() => {
     value: 10,
     duration: 2,
     scrollTrigger: {
-      trigger: '.impact-section',
+      trigger: '.who-we-are',
       start: 'top 60%',
     },
     onUpdate: () => {
@@ -141,7 +141,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="section-container py-14">
+  <div class="who-we-are section-container py-14">
     <div class="grid grid-cols-1 gap-10">
       <div class="flex flex-col gap-3 items-center">
         <span
@@ -184,7 +184,7 @@ onMounted(() => {
           </p>
         </div>
         <div
-          class="relative group flex overflow-hidden flex-col gap-2 bg-card-color px-8 py-12 rounded-b-lg md:rounded-lg lg:rounded-r-lg lg:rounded-l-none"
+          class="relative group flex overflow-hidden flex-col gap-2 bg-card-color px-8 py-12 rounded-b-lg md:rounded-lg lg:rounded-r-lg lg:rounded-l-none md:col-span-2 lg:col-span-1"
         >
           <h3 class="text-display font-bold text-text-text-primary-color">{{ counter4 }}+ Years</h3>
           <p class="text-body font-semibold text-text-primary-color">Years of Programs</p>
@@ -194,8 +194,12 @@ onMounted(() => {
         </div>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
-        <div class="w-full h-72 lg:h-full rounded-lg">
-          <img src="../../../assets/images/who-we-are/who-we-are.webp" alt="" />
+        <div class="w-full h-72 lg:h-full rounded-lg overflow-hidden">
+          <img
+            class="w-full h-full object-cover"
+            src="../../../assets/images/who-we-are/who-we-are.webp"
+            alt=""
+          />
         </div>
         <div class="flex flex-col">
           <h2 class="text-display">
