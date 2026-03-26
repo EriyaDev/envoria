@@ -59,6 +59,8 @@ const faqs = [
           FAQS</span
         >
         <h2
+          data-aos="fade-up"
+          data-aos-delay="00"
           class="text-display font-medium text-text-text-primary-color mt-10 text-center max-w-[90%] md:max-w-[70%] xl:max-w-[60%]"
         >
           Clearing <span class="text-text-primary-color/55">doubts</span> about our
@@ -70,6 +72,8 @@ const faqs = [
           <div v-for="(item, index) in faqs" :key="index" class="flex flex-col">
             <!-- Header -->
             <div
+              data-aos="fade-up"
+              :data-aos-delay="index + '00'"
               class="flex items-center justify-between w-full p-7.5 bg-primary-color cursor-pointer select-none transition-all duration-300"
               :class="openIndex === index ? 'rounded-t-xl' : 'rounded-xl'"
               @click="toggle(index)"

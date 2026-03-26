@@ -13,12 +13,14 @@ import ButtonPrimary from '@/components/micro/ButtonPrimary.vue'
           Need Help?</span
         >
         <h2
+          data-aos="fade-up"
+          data-aos-delay="00"
           class="text-display font-medium text-text-text-primary-color mt-10 text-center max-w-[90%] md:max-w-[70%] xl:max-w-[60%]"
         >
           Let’s start a <span class="text-text-primary-color/55">conversation</span>
         </h2>
       </div>
-      <div class="w-full lg:max-w-[90%] mx-auto">
+      <div class="w-full lg:max-w-[90%] mx-auto mt-10">
         <div class="bg-card-color rounded-xl p-5 lg:p-10 grid grid-cols-1 lg:grid-cols-2 gap-5">
           <div class="flex flex-col gap-2 w-full lg:col-span-2">
             <label
@@ -29,7 +31,7 @@ import ButtonPrimary from '@/components/micro/ButtonPrimary.vue'
             <input
               type="text"
               id="basic-input"
-              class="w-full px-4 py-3 rounded-lg border border-dashed border-text-primary-color/50 focus:outline-none focus:border-accent-color transition-all font-manrope placeholder-black/30"
+              class="bg-primary-color w-full px-4 py-3 rounded-lg border border-dashed border-text-primary-color/50 focus:outline-none focus:border-accent-color transition-all font-manrope placeholder-black/30"
               placeholder="Type your full name"
             />
           </div>
@@ -42,7 +44,7 @@ import ButtonPrimary from '@/components/micro/ButtonPrimary.vue'
             <input
               type="email"
               id="basic-input"
-              class="w-full px-4 py-3 rounded-lg border border-dashed border-text-primary-color/50 focus:outline-none focus:border-accent-color transition-all font-manrope placeholder-black/30"
+              class="bg-primary-color w-full px-4 py-3 rounded-lg border border-dashed border-text-primary-color/50 focus:outline-none focus:border-accent-color transition-all font-manrope placeholder-black/30"
               placeholder="Type your email"
             />
           </div>
@@ -55,7 +57,7 @@ import ButtonPrimary from '@/components/micro/ButtonPrimary.vue'
             <input
               type="tel"
               id="basic-input"
-              class="w-full px-4 py-3 rounded-lg border border-dashed border-text-primary-color/50 focus:outline-none focus:border-accent-color transition-all font-manrope placeholder-black/30"
+              class="bg-primary-color w-full px-4 py-3 rounded-lg border border-dashed border-text-primary-color/50 focus:outline-none focus:border-accent-color transition-all font-manrope placeholder-black/30"
               placeholder="Type your phone number"
             />
           </div>
@@ -63,12 +65,12 @@ import ButtonPrimary from '@/components/micro/ButtonPrimary.vue'
             <label
               for="basic-input"
               class="font-grotesk font-semibold text-text-primary-color text-sm"
-              >Name<span class="text-text-primary-color/50">*</span></label
+              >Message<span class="text-text-primary-color/50">*</span></label
             >
             <textarea
               type="text"
               id="basic-input"
-              class="w-full px-4 py-3 rounded-lg border border-dashed border-text-primary-color/50 focus:outline-none focus:border-accent-color transition-all font-manrope placeholder-black/30"
+              class="bg-primary-color w-full px-4 py-3 rounded-lg border border-dashed border-text-primary-color/50 focus:outline-none focus:border-accent-color transition-all font-manrope placeholder-black/30"
               rows="10"
               placeholder="Type your message"
             ></textarea>

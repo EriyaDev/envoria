@@ -17,6 +17,8 @@ gsap.registerPlugin(ScrollTrigger)
           Contact Us</span
         >
         <h2
+          data-aos="fade-up"
+          data-aos-delay="00"
           class="text-display font-medium text-primary-color lg:max-w-[30%] mt-10 xl:max-w-[40%] desktop:max-w-[23%]"
         >
           Envoria is <span class="text-accent-color">always</span> on standby
@@ -25,6 +27,8 @@ gsap.registerPlugin(ScrollTrigger)
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0.5 mt-10">
         <div
+          data-aos="fade-up"
+          data-aos-delay="00"
           class="relative group flex overflow-hidden flex-col gap-2 bg-fourth-color px-8 py-12 rounded-t-lg md:rounded-lg lg:rounded-l-lg lg:rounded-r-none"
         >
           <h3 class="text-display font-bold text-accent-color">Call us anytime</h3>
@@ -35,6 +39,8 @@ gsap.registerPlugin(ScrollTrigger)
           ></div>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-delay="200"
           class="relative group flex overflow-hidden flex-col gap-2 bg-fourth-color px-8 py-12 md:rounded-lg lg:rounded-none"
         >
           <h3 class="text-display font-bold text-accent-color">Write to us</h3>
@@ -45,6 +51,8 @@ gsap.registerPlugin(ScrollTrigger)
           ></div>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-delay="400"
           class="relative group flex overflow-hidden flex-col gap-2 bg-fourth-color px-8 py-12 rounded-b-lg md:rounded-lg lg:rounded-r-lg lg:rounded-l-none"
         >
           <h3 class="text-display font-bold text-accent-color">Open hours</h3>

@@ -11,6 +11,8 @@
           Where We Operate
         </span>
         <h2
+          data-aos="fade-up"
+          data-aos-delay="00"
           class="text-display font-medium text-center text-primary-color max-w-[90%] xl:max-w-[50%] mt-10"
         >
           Scattered <span class="text-accent-color">across the globe,</span> built for waste
