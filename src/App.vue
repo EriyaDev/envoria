@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import { useRouter } from 'vue-router'
 import Navbar from './components/Navbar.vue'
 import { onMounted, onUnmounted } from 'vue'
 import Lenis from 'lenis'
@@ -54,6 +55,20 @@ onUnmounted(() => {
 onUnmounted(() => {
   if (rafId) cancelAnimationFrame(rafId)
   if (lenis) lenis.destroy()
+})
+
+const router = useRouter()
+
+onMounted(() => {
+  lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smooth: true,
+  })
+
+  router.afterEach(() => {
+    lenis.scrollTo(0, { immediate: true })
+  })
 })
 </script>
 

@@ -31,7 +31,11 @@ gsap.registerPlugin(ScrollTrigger)
           data-aos-delay="00"
           class="relative group flex overflow-hidden flex-col gap-2 bg-fourth-color px-8 py-12 rounded-t-lg md:rounded-lg lg:rounded-l-lg lg:rounded-r-none"
         >
-          <h3 class="text-display font-bold text-accent-color">Call us anytime</h3>
+          <h3
+            class="text-display font-bold text-accent-color overflow-auto text-nowrap scroll-hidden"
+          >
+            Call us anytime
+          </h3>
           <p class="text-small text-primary-color line-clamp-2 mt-3">+123-456-7890</p>
           <p class="text-small text-primary-color line-clamp-2">+ 987-654-3210</p>
           <div
@@ -68,3 +72,10 @@ gsap.registerPlugin(ScrollTrigger)
     </div>
   </section>
 </template>
+
+<style scope>
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+</style>

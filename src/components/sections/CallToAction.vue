@@ -19,7 +19,7 @@ import ButtonPrimary from '../micro/ButtonPrimary.vue'
       <h1
         data-aos="fade"
         data-aos-delay="00"
-        class="text-display text-primary-color text-center font-semibold max-w-[90%] lg:max-w-[40%]"
+        class="text-display text-primary-color text-center font-semibold max-w-[90%] lg:max-w-[50%] 2xl:max-w-[40%]"
       >
         Join the mission for smarter, cleaner waste movement
       </h1>
