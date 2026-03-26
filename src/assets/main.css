@@ -39,11 +39,11 @@ body {
 
 /* TEXT */
 .text-display {
-  @apply font-family-inter text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight;
+  @apply font-family-inter text-4xl md:text-5xl lg:text-5xl 2xl:text-6xl leading-tight tracking-tight;
 }
 
 .medium-heading {
-  @apply font-family-inter text-3xl md:text-4xl leading-snug tracking-tight;
+  @apply font-family-inter text-3xl 2xl:text-4xl leading-snug tracking-tight;
 }
 
 .small-heading {
@@ -51,7 +51,7 @@ body {
 }
 
 .text-body {
-  @apply font-family-inter text-base md:text-lg leading-relaxed;
+  @apply font-family-inter text-base 2xl:text-lg;
 }
 
 .text-small {
