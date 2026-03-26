@@ -88,3 +88,10 @@ body {
 .swiper-button-prev-custom {
   @apply flex w-20 h-12 items-center justify-center px-8 rounded-2xl bg-text-primary-color text-primary-color;
 }
+.swiper-pagination-bullet {
+  @apply bg-white/50!;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-accent-color!;
+}
