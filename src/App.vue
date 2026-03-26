@@ -6,6 +6,8 @@ import Lenis from 'lenis'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import { ref } from 'vue'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const isMenuOpen = ref(false)
 
@@ -34,6 +36,10 @@ onMounted(() => {
 
   // Keep ScrollTrigger in sync with Lenis scroll position
   lenis.on('scroll', ScrollTrigger.update)
+
+  AOS.init({
+    once: true,
+  })
 })
 
 onUnmounted(() => {
