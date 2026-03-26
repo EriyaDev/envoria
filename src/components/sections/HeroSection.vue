@@ -145,11 +145,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="min-h-screen bg-secondary-color">
+  <section class="min-h-[80vh] lg:min-h-screen bg-secondary-color">
     <div class="grid grid-cols-5 lg:grid-cols-10 section-container gap-10 px-3 md:px-0">
       <!-- LEFT: Text -->
       <div
-        class="flex flex-col justify-center text-left py-16 h-screen w-full col-span-5 lg:col-span-10 xl:col-span-5"
+        class="flex flex-col justify-center text-left py-16 h-[80vh] lg:h-screen w-full col-span-5 lg:col-span-10 xl:col-span-5"
       >
         <h1 class="text-display font-semibold mb-6">
           Innovation rooted in nature for a <span ref="typedEl"></span>
@@ -158,9 +158,9 @@ onMounted(() => {
           Join a community of eco-enthusiasts taking meaningful actions to protect nature and create
           a greener future.
         </p>
-        <div class="flex flex-row items-center gap-3 md:gap-5">
+        <div class="flex flex-col lg:flex-row lg:items-center gap-3 md:gap-5">
           <button
-            class="bg-black flex items-center gap-1 text-white font-family-inter text-base py-3 px-6 rounded-full hover:bg-black/75 transition-colors duration-300 hover:cursor-pointer"
+            class="bg-black w-fit flex items-center gap-1 text-white font-family-inter text-base py-3 px-6 rounded-full hover:bg-black/75 transition-colors duration-300 hover:cursor-pointer"
           >
             <img src="../../assets/icons/home/leaf.svg" alt="" />
             <p class="text-body font-medium">Join Action</p>
@@ -178,7 +178,7 @@ onMounted(() => {
       >
         <div class="marquee-wrapper">
           <!-- ── LEFT column — scrolls UPWARD ── -->
-          <div class="marquee-col" id="col-left">
+          <div class="marquee-col relative overflow-hidden lg:w-[215px]" id="col-left">
             <div class="marquee-track" id="track-left">
               <!-- original set -->
               <div class="marquee-card">
@@ -195,7 +195,7 @@ onMounted(() => {
           </div>
 
           <!-- ── RIGHT column — scrolls DOWNWARD ── -->
-          <div class="marquee-col" id="col-right">
+          <div class="marquee-col relative overflow-hidden lg:w-[215px]" id="col-right">
             <div class="marquee-track" id="track-right">
               <!-- original set -->
               <div class="marquee-card">
@@ -225,7 +225,6 @@ onMounted(() => {
 
 /* ── Each column ── */
 .marquee-col {
-  width: 312px;
   overflow: hidden; /* clip content that scrolls out of view */
   position: relative;
 }
@@ -260,7 +259,6 @@ onMounted(() => {
 
 /* ── Individual card ── */
 .marquee-card {
-  width: 312px;
   height: 350px;
   border-radius: 16px;
   overflow: hidden;

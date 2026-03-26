@@ -43,7 +43,7 @@ const slides = ref([
     name: 'Ryan’s Family',
     place: 'Orchard, Singapore',
     message:
-      'As a household, we never thought waste management could be this easy. Envoria picked up everything on time, sorted it responsibly, and even sent us a recycling summary. Feels great knowing our family is contributing to a cleaner planet.',
+      'As a household, we never thought waste management could be this easy. Envoria picked up everything on time, sorted it responsibly, and even sent us a recycling summary.',
   },
   {
     id: 5,
@@ -83,7 +83,7 @@ const slides = ref([
     name: 'Ryan’s Family',
     place: 'Orchard, Singapore',
     message:
-      'As a household, we never thought waste management could be this easy. Envoria picked up everything on time, sorted it responsibly, and even sent us a recycling summary. Feels great knowing our family is contributing to a cleaner planet.',
+      'As a household, we never thought waste management could be this easy. Envoria picked up everything on time, sorted it responsibly, and even sent us a recycling summary.',
   },
   {
     id: 10,
@@ -221,7 +221,7 @@ onMounted(() => {
         <SwiperSlide v-for="(slide, index) in slides" :key="index">
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="h-full w-full">
             <!-- Replace this with your actual slide content -->
-            <div class="bg-card-color p-10 rounded-2xl h-[525px]">
+            <div class="bg-card-color p-10 rounded-2xl h-96 lg:h-96">
               <div class="flex flex-col justify-between h-full">
                 <p class="text-body">
                   {{ slide.message }}

@@ -5,6 +5,13 @@ import { onMounted, onUnmounted } from 'vue'
 import Lenis from 'lenis'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
+import { ref } from 'vue'
+
+const isMenuOpen = ref(false)
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value
+}
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -44,8 +51,14 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="fixed top-5 flex w-full items-center justify-center z-50">
+  <div
+    class="fixed top-5 flex w-full items-center justify-center z-50 2xl:w-[1440px] left-1/2 -translate-x-1/2"
+  >
     <Navbar />
   </div>
-  <RouterView />
+  <RouterView v-slot="{ Component }">
+    <Transition name="page" mode="out-in">
+      <component :is="Component" />
+    </Transition>
+  </RouterView>
 </template>
