@@ -31,27 +31,27 @@ const blogs = [
         title: "Indonesia’s Most Endangered Ecosystems And What We Can Do About It",
         category: "Biodiversity",
         date: "28 Feb 2026",
-        image: new URL('../../assets/images/blog/image-1.webp', import.meta.url).href,
+        image: new URL('../../assets/images/blog/image-4.webp', import.meta.url).href,
     },
     {
         id: 5,
         title: "The Plastic Crisis In Our Oceans Is Worse Than You Think",
         category: "Marine",
         date: "22 Feb 2026",
-        image: new URL('../../assets/images/blog/image-1.webp', import.meta.url).href,
+        image: new URL('../../assets/images/blog/image-5.webp', import.meta.url).href,
     },
     {
         id: 6,
         title: "How To Build A Zero-Waste Kitchen In 30 Days",
         category: "Lifestyle",
         date: "8 Feb 2026",
-        image: new URL('../../assets/images/blog/image-1.webp', import.meta.url).href,
+        image: new URL('../../assets/images/blog/image-6.webp', import.meta.url).href,
     }
 ];
 </script>
 
 <template>
-    <div class="py-10">
+    <div class="py-10 bg-[#F5F5F5]">
         <div class="section-container mx-auto">
             <div class="flex flex-col gap-5">
                 <div class="flex flex-col gap-3 items-start">
