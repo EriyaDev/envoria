@@ -14,7 +14,7 @@ const handleScroll = () => {
 }
 
 const handleNavbar = () => {
-  mobileNabvar.value.classList.toggle('!h-[240px]')
+  mobileNabvar.value.classList.toggle('!h-[280px]')
 }
 
 onMounted(() => {
@@ -78,8 +78,11 @@ onUnmounted(() => {
           <div class="nav-link-underline"></div>
         </li>
         <li class="relative w-fit group">
-          <router-link class="nav-link" to="/blogs">Blog</router-link>
+          <router-link class="nav-link" to="/blog">Blog</router-link>
           <div class="nav-link-underline"></div>
+        </li>
+        <li class="relative w-full flex justify-end group">
+          <ButtonPrimary to="/contact">Contact Us</ButtonPrimary>
         </li>
       </ul>
     </nav>
