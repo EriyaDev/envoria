@@ -1,33 +1,12 @@
 <script setup></script>
 
 <template>
-  <footer class="w-full bg-primary-color rounded-2xl overflow-hidden">
+  <footer class="w-full bg-card-color rounded-2xl overflow-hidden">
     <div class="section-container mx-auto pt-12 pb-8 grid grid-cols-1 lg:grid-cols-12 gap-12">
       <!-- LEFT: Brand + Newsletter (5 of 12 cols) -->
       <div class="lg:col-span-5 flex flex-col gap-8">
         <!-- Logo -->
-        <a href="#" class="flex items-center gap-2 w-fit">
-          <!-- Leaf SVG icon -->
-          <svg
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
-              fill="#4ade00"
-              opacity="0.15"
-            />
-            <path
-              d="M17 3.5C13.5 3.5 9 5.5 7 10c-1.5 3.5-.5 7.5 2 9.5 0 0 1-4 4-6s6-2.5 7-5c.5-1.5.5-5-3-5z"
-              fill="#4ade00"
-            />
-            <path d="M7 19.5c1-3 3-5 6-7" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
-          </svg>
-          <span class="text-gray-900 font-semibold text-base tracking-tight"> Envoria™ </span>
-        </a>
+        <img class="h-5 w-fit" src="../../assets/images/logo-footer.svg" alt="" />
 
         <!-- Newsletter -->
         <div class="flex flex-col gap-3">
