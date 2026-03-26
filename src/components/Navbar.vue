@@ -34,7 +34,9 @@ onUnmounted(() => {
     id="header"
     class="navbar z-50 bg-primary-color flex flex-row items-center justify-between w-[85%] rounded-lg p-3 transition-all ease-out duration-500"
   >
-    <div class="logo"><img class="h-7" src="../assets/images/logo.svg" alt="" /></div>
+    <div class="logo">
+      <router-link to="/"><img class="h-7" src="../assets/images/logo.svg" alt="" /></router-link>
+    </div>
 
     <nav>
       <ul class="hidden lg:flex flex-row items-center gap-10">
