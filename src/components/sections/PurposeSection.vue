@@ -52,7 +52,6 @@ onMounted(() => {
       >
       <h2
         data-aos="fade-up"
-        data-aos-duration="1000"
         data-aos-delay="00"
         class="medium-heading font-medium text-text-primary-color mt-10 text-center max-w-[90%] md:max-w-[70%] xl:max-w-[37%]"
       >
