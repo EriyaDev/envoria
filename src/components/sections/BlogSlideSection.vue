@@ -13,7 +13,7 @@ const nextBtn = ref(null)
 </script>
 
 <template>
-    <div class="bg-[#F0F0F0] py-10">
+    <div class="bg-[#F0F0F0] py-10 pt-32">
         <div class="section-container mx-auto">
             <div class="flex md:flex-row flex-col items-start gap-5 md:gap-0 md:items-end justify-between">
                 <div class="flex flex-col gap-3 items-start">

@@ -9,7 +9,7 @@
                 <span
                     class="flex flex-row items-center w-fit px-3 py-1 bg-black/5 text-text-primary-color border border-[#2D612B]/13 text-small rounded-full font-semibold">
                     <div class="w-2 h-2 bg-accent-color rounded-full mr-2"></div>
-                    Upcoming Programs
+                    Program Hub
                 </span>
                 <h2 class="medium-heading font-medium text-text-primary-color text-start md:max-w-[70%] xl:max-w-[37%]">
                     Action, Education, <br> and <span class="text-text-primary-color/55">Real Impact.</span>
