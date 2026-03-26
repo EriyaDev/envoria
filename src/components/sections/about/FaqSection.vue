@@ -59,6 +59,8 @@ const faqs = [
           FAQS</span
         >
         <h2
+          data-aos="fade-up"
+          data-aos-delay="00"
           class="text-display font-medium text-text-text-primary-color mt-10 text-center max-w-[90%] md:max-w-[70%] xl:max-w-[60%]"
         >
           Clearing <span class="text-text-primary-color/55">doubts</span> about our
