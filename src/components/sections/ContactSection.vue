@@ -75,8 +75,6 @@ const faqs = [
             <div v-for="(item, index) in faqs" :key="index" class="flex flex-col">
               <!-- Header -->
               <div
-                data-aos="fade-up"
-                data-aos-delay="00"
                 class="flex items-center justify-between w-full p-7.5 bg-primary-color cursor-pointer select-none transition-all duration-300"
                 :class="openIndex === index ? 'rounded-t-xl' : 'rounded-xl'"
                 @click="toggle(index)"
