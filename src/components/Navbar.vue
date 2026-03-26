@@ -62,7 +62,9 @@ onUnmounted(() => {
       ref="mobileNabvar"
       class="absolute top-11 left-0 right-0 overflow-hidden h-0 transition-all duration-700 ease-out"
     >
-      <ul class="flex flex-col gap-5 bg-primary-color rounded-b-lg p-10 w-[85%] mx-auto z-40">
+      <ul
+        class="flex flex-col gap-5 bg-primary-color rounded-b-lg p-10 w-[85%] mx-auto z-40 border-b border-black/10"
+      >
         <li class="relative w-fit group">
           <router-link class="nav-link" to="/">Home</router-link>
           <div class="nav-link-underline"></div>
