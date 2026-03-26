@@ -8,7 +8,7 @@
           class="flex flex-row items-center w-fit px-3 py-1 bg-black text-white text-small rounded-full font-semibold border border-border-color"
         >
           <div class="w-2 h-2 bg-accent-color rounded-full mr-2 animate-pulse"></div>
-          Our Transportation
+          Where We Operate
         </span>
         <h2
           class="text-display font-medium text-center text-primary-color max-w-[90%] xl:max-w-[50%] mt-10"
