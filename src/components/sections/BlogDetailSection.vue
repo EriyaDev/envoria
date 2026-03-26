@@ -9,13 +9,15 @@
                         <button class="button-primary">Biodiversity</button>
                         <button class="button-outline border-[#DBDBDB]! text-[#DBDBDB]!">28 Feb 2026</button>
                     </span>
-                    <h1 class="text-display lg:max-w-[70%] xl:max-w-[65%] font-semibold text-primary-color">Indonesia's
+                    <h1 data-aos="fade-up"
+                        class="text-display lg:max-w-[70%] xl:max-w-[65%] font-semibold text-primary-color">Indonesia's
                         Most Endangered
                         Ecosystems and
                         What We Can
                         Do
                         About It</h1>
-                    <p class="text-body lg:max-w-[65%] text-[#DBDBDB]">From the peat swamp forests of Kalimantan to the
+                    <p data-aos="fade-up" data-aos-delay="200" class="text-body lg:max-w-[65%] text-[#DBDBDB]">From the
+                        peat swamp forests of Kalimantan to the
                         coral reefs of
                         Raja Ampat,
                         Indonesia's biodiversity is under unprecedented pressure.</p>

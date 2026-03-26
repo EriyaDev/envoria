@@ -11,10 +11,12 @@
                     <div class="w-2 h-2 bg-accent-color rounded-full mr-2"></div>
                     Program Hub
                 </span>
-                <h2 class="medium-heading font-medium text-text-primary-color text-start md:max-w-[70%] xl:max-w-[37%]">
+                <h2 data-aos="fade-right"
+                    class="medium-heading font-medium text-text-primary-color text-start md:max-w-[70%] xl:max-w-[37%]">
                     Action, Education, <br> and <span class="text-text-primary-color/55">Real Impact.</span>
                 </h2>
-                <p class="text-body font-medium text-[#474E35] mt-3 md:max-w-[40%]">
+                <p data-aos="fade-right" data-aos-delay="200"
+                    class="text-body font-medium text-[#474E35] mt-3 md:max-w-[40%]">
                     Find field programs, educational articles, donation campaigns, and environmental seminars from
                     Envoria all in one place.
                 </p>

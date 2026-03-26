@@ -60,13 +60,15 @@ const blogs = [
                         <div class="w-2 h-2 bg-accent-color rounded-full mr-2"></div>
                         Recent Blog & Articles
                     </span>
-                    <h2 class="medium-heading font-medium text-text-primary-color mt-10 text-start">
+                    <h2 data-aos="fade-right"
+                        class="medium-heading font-medium text-text-primary-color mt-10 text-start">
                         Latest <span class="text-text-primary-color/55">insights</span> and <br> <span
                             class="text-text-primary-color/55">trends</span>
                     </h2>
                 </div>
 
-                <div class="flex items-center gap-4">
+                <div data-aos="fade-right" data-aos-delay="200"
+                    class="flex text-nowrap overflow-x-auto w-full items-center gap-4">
                     <button class="button-secondary">All Topics</button>
                     <button class="button-outline">Zero Waste</button>
                     <button class="button-outline">Global Warming</button>
@@ -77,7 +79,7 @@ const blogs = [
 
             <!-- versi gapake slider -->
             <div class="grid grid-cols-1 md:grid-cols-2 mt-10 xl:grid-cols-3 gap-10 md:gap-5">
-                <BlogCard v-for="blog in blogs" :key="blog.id" :blog="blog" />
+                <BlogCard data-aos="fade-up" data-aos-delay="300" v-for="blog in blogs" :key="blog.id" :blog="blog" />
             </div>
 
             <div class="mt-10 justify-center flex">

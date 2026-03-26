@@ -17,7 +17,7 @@ import 'swiper/css/pagination'
                     <div class="w-2 h-2 bg-accent-color rounded-full mr-2"></div>
                     Seminars & Workshops
                 </span>
-                <h2 class="medium-heading font-medium text-text-primary-color mt-10 text-start">
+                <h2 data-aos="fade-right" class="medium-heading font-medium text-text-primary-color mt-10 text-start">
                     Learn <span class="text-text-primary-color/55">directly</span> from
                     <br>
                     the experts.
@@ -26,7 +26,8 @@ import 'swiper/css/pagination'
 
             <!-- versi gapake slider -->
             <div class="grid grid-cols-1 mt-10 gap-5">
-                <div class="grid grid-cols-1 lg:grid-cols-10 p-5 rounded-lg bg-primary-color gap-5">
+                <div data-aos="fade-up" data-aos-delay="200"
+                    class="grid grid-cols-1 lg:grid-cols-10 p-5 rounded-lg bg-primary-color gap-5">
                     <div class="lg:col-span-4 w-full h-100 lg:h-full">
                         <img src="../../assets/images/program-workshop/image-1.webp" alt=""
                             class="h-full w-full object-cover rounded-lg">
@@ -100,7 +101,8 @@ import 'swiper/css/pagination'
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-10 p-5 rounded-lg bg-primary-color gap-5">
+                <div data-aos="fade-up" data-aos-delay="300"
+                    class="grid grid-cols-1 lg:grid-cols-10 p-5 rounded-lg bg-primary-color gap-5">
                     <div class="lg:col-span-4 w-full h-100 lg:h-full">
                         <img src="../../assets/images/program-workshop/image-2.webp" alt=""
                             class="h-full w-full object-cover rounded-lg">

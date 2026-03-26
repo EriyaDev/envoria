@@ -5,7 +5,7 @@ import ButtonSecondary from '../micro/ButtonSecondary.vue'
 </script>
 
 <template>
-    <div class="bg-[#F0F0F0] py-10">
+    <div class="bg-[#F5F5F5] py-10">
         <div class="section-container mx-auto">
             <span
                 class="flex flex-row items-center w-fit px-3 py-1 bg-black/5 text-text-primary-color border border-[#2D612B]/13 text-small rounded-full font-semibold">
@@ -13,7 +13,7 @@ import ButtonSecondary from '../micro/ButtonSecondary.vue'
                 Highlights
             </span>
 
-            <div class="grid grid-cols-1 xl:grid-cols-10 gap-5 mt-10">
+            <div data-aos="fade-up" data-aos-delay="200" class="grid grid-cols-1 xl:grid-cols-10 gap-5 mt-10">
                 <div class="xl:col-span-6 relative overflow-hidden h-120">
                     <div class="absolute inset-0">
                         <img src="../../assets/images/program-highlight/image-1.webp" alt=""

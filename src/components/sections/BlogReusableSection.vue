@@ -61,7 +61,7 @@ onMounted(() => {
 <template>
     <div class="bg-card-color py-10">
         <div class="section-container mx-auto">
-            <div class="flex items-center justify-between">
+            <div data-aos="fade-right" class="flex items-center justify-between">
                 <h2 class="medium-heading font-medium text-text-primary-color">
                     Recent Blog
                 </h2>
@@ -76,7 +76,7 @@ onMounted(() => {
 
             <!-- versi gapake slider -->
             <div class="grid grid-cols-1 md:grid-cols-2 mt-10 xl:grid-cols-3 gap-10 md:gap-5">
-                <BlogCard v-for="blog in blogs" :key="blog.id" :blog="blog" />
+                <BlogCard data-aos="fade-up" data-aos-delay="200" v-for="blog in blogs" :key="blog.id" :blog="blog" />
             </div>
 
             <div class="w-[85%] mx-auto mt-10">

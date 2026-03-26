@@ -17,13 +17,14 @@ import 'swiper/css/pagination'
                     <div class="w-2 h-2 bg-accent-color rounded-full mr-2"></div>
                     Action Program
                 </span>
-                <h2 class="medium-heading font-medium text-text-primary-color mt-10 text-start">
+                <h2 data-aos="fade-right" class="medium-heading font-medium text-text-primary-color mt-10 text-start">
                     Real action
                     <br> on
                     <span class="text-text-primary-color/55">the ground.</span>
                 </h2>
 
-                <div class="flex items-center w-full overflow-x-auto text-nowrap gap-4">
+                <div data-aos="fade-right" data-aos-delay="200"
+                    class="flex items-center w-full overflow-x-auto text-nowrap gap-4">
                     <button class="button-secondary">All Programs</button>
                     <button class="button-white">Ongoing</button>
                     <button class="button-white">Coming Soon</button>
@@ -33,7 +34,8 @@ import 'swiper/css/pagination'
 
             <!-- versi gapake slider -->
             <div class="grid grid-cols-1 mt-10 xl:grid-cols-2 gap-5">
-                <div class="grid grid-cols-1 md:grid-cols-10 p-5 rounded-lg bg-primary-color gap-5">
+                <div data-aos="fade-up" data-aos-delay="300"
+                    class="grid grid-cols-1 md:grid-cols-10 p-5 rounded-lg bg-primary-color gap-5">
                     <div class="md:col-span-6 gap-10 flex flex-col order-last md:order-first">
                         <span
                             class="flex flex-row items-center w-fit px-3 py-1 bg-accent-color/16 text-text-primary-color border border-border-color/55 text-small rounded-full font-semibold">
@@ -83,7 +85,8 @@ import 'swiper/css/pagination'
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-10 p-5 rounded-lg bg-primary-color gap-5">
+                <div data-aos="fade-up" data-aos-delay="400"
+                    class="grid grid-cols-1 md:grid-cols-10 p-5 rounded-lg bg-primary-color gap-5">
                     <div class="md:col-span-6 gap-10 flex flex-col order-last md:order-first">
                         <span
                             class="flex flex-row items-center w-fit px-3 py-1 bg-[#FFBB5B]/16 text-text-primary-color border border-[#61592B]/13 text-small rounded-full font-semibold">
@@ -128,7 +131,8 @@ import 'swiper/css/pagination'
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-10 p-5 rounded-lg bg-primary-color gap-5">
+                <div data-aos="fade-up" data-aos-delay="400"
+                    class="grid grid-cols-1 md:grid-cols-10 p-5 rounded-lg bg-primary-color gap-5">
                     <div class="md:col-span-6 gap-10 flex flex-col order-last md:order-first">
                         <span
                             class="flex flex-row items-center w-fit px-3 py-1 bg-accent-color/16 text-text-primary-color border border-border-color/55 text-small rounded-full font-semibold">
@@ -172,7 +176,8 @@ import 'swiper/css/pagination'
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-10 p-5 rounded-lg bg-primary-color gap-5">
+                <div data-aos="fade-up" data-aos-delay="500"
+                    class="grid grid-cols-1 md:grid-cols-10 p-5 rounded-lg bg-primary-color gap-5">
                     <div class="md:col-span-6 gap-10 flex flex-col order-last md:order-first">
                         <span
                             class="flex flex-row items-center w-fit px-3 py-1 bg-accent-color/16 text-text-primary-color border border-border-color/55 text-small rounded-full font-semibold">

@@ -22,14 +22,15 @@ const nextBtn = ref(null)
                         <div class="w-2 h-2 bg-accent-color rounded-full mr-2"></div>
                         Blog & Articles
                     </span>
-                    <h2 class="medium-heading font-medium text-text-primary-color mt-10 text-start">
+                    <h2 data-aos="fade-right"
+                        class="medium-heading font-medium text-text-primary-color mt-10 text-start">
                         Stay <span class="text-text-primary-color/55">updated</span> with <br> Envoria latest <span
                             class="text-text-primary-color/55">news</span>
 
                     </h2>
                 </div>
 
-                <span class="flex items-center gap-5">
+                <span class="flex items-center gap-5" data-aos="fade-up" data-aos-delay="200">
                     <button ref="prevBtn" class="button-secondary py-5! px-8!">
                         <img src="../../assets/icons/home/arrow-white.svg" alt="" class="rotate-180">
                     </button>
@@ -42,8 +43,8 @@ const nextBtn = ref(null)
 
             <!-- versi pake slider -->
             <div class="mt-10">
-                <Swiper :modules="[Navigation, Autoplay]" :slides-per-view="1" :space-between="20"
-                    :navigation="{ prevEl: prevBtn, nextEl: nextBtn }" autoplay="{ delay: 3000 }"
+                <Swiper data-aos="fade-up" data-aos-delay="300" :modules="[Navigation, Autoplay]" :slides-per-view="1"
+                    :space-between="20" :navigation="{ prevEl: prevBtn, nextEl: nextBtn }" autoplay="{ delay: 3000 }"
                     class="w-full rounded-lg">
                     <SwiperSlide>
                         <div class="grid grid-cols-1 xl:grid-cols-10 gap-5">
