@@ -78,7 +78,7 @@ onUnmounted(() => {
           <div class="nav-link-underline"></div>
         </li>
         <li class="relative w-fit group">
-          <router-link class="nav-link" to="/blog">Blog</router-link>
+          <router-link class="nav-link" to="/blogs">Blog</router-link>
           <div class="nav-link-underline"></div>
         </li>
       </ul>
