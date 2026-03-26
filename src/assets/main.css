@@ -64,11 +64,11 @@ body {
 
 /* BUTTONS */
 .button-primary {
-  @apply flex flex-row items-center gap-2 bg-accent-color text-black font-family-inter text-base  py-3 px-6 rounded-full hover:brightness-95 transition-all hover:cursor-pointer;
+  @apply w-fit flex flex-row items-center gap-2 bg-accent-color text-black font-family-inter text-base  py-3 px-6 rounded-full hover:brightness-95 transition-all hover:cursor-pointer;
 }
 
 .button-secondary {
-  @apply flex flex-row items-center gap-2 text-nowrap bg-third-color text-primary-color font-family-inter text-base  py-3 px-6 rounded-full hover:brightness-95 transition-all hover:cursor-pointer;
+  @apply w-fit flex flex-row items-center gap-2 text-nowrap bg-third-color text-primary-color font-family-inter text-base  py-3 px-6 rounded-full hover:brightness-95 transition-all hover:cursor-pointer;
 }
 
 .button-outline {
@@ -94,4 +94,12 @@ body {
 
 .swiper-pagination-bullet-active {
   @apply bg-accent-color!;
+}
+
+.marquee-card {
+  @apply w-56 xl:w-72 2xl:w-[312px];
+}
+
+.marquee-col {
+  @apply w-56 xl:w-72 2xl:w-[312px];
 }
