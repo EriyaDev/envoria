@@ -39,11 +39,11 @@ body {
 
 /* TEXT */
 .text-display {
-  @apply font-family-inter text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight;
+  @apply font-family-inter text-4xl md:text-5xl lg:text-5xl 2xl:text-6xl leading-tight tracking-tight;
 }
 
 .medium-heading {
-  @apply font-family-inter text-3xl md:text-4xl leading-snug tracking-tight;
+  @apply font-family-inter text-3xl 2xl:text-4xl leading-snug tracking-tight;
 }
 
 .small-heading {
@@ -51,7 +51,7 @@ body {
 }
 
 .text-body {
-  @apply font-family-inter text-base md:text-lg leading-relaxed;
+  @apply font-family-inter text-base 2xl:text-lg;
 }
 
 .text-small {
@@ -87,4 +87,11 @@ body {
 .swiper-button-next-custom,
 .swiper-button-prev-custom {
   @apply flex w-20 h-12 items-center justify-center px-8 rounded-2xl bg-text-primary-color text-primary-color;
+}
+.swiper-pagination-bullet {
+  @apply bg-white/50!;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-accent-color!;
 }

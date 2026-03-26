@@ -31,16 +31,18 @@
 
         <!-- Newsletter -->
         <div class="flex flex-col gap-3">
-          <p class="text-gray-900 font-semibold text-sm">Subscribe to our newsletter.</p>
+          <p class="text-gray-900 font-semibold text-sm 2xl:text-base">
+            Subscribe to our newsletter.
+          </p>
           <!-- Input + Button row — Flexbox -->
           <div class="flex items-center gap-3">
             <input
               type="email"
               placeholder="Type your email"
-              class="flex-1 min-w-0 bg-transparent border border-dashed border-gray-400 rounded-full px-4 py-2.5 text-sm text-gray-700 placeholder-gray-400 outline-none focus:border-gray-600 transition-colors"
+              class="flex-1 min-w-0 bg-transparent border border-dashed border-gray-400 rounded-full px-4 py-2.5 text-sm 2xl:text-base text-gray-700 placeholder-gray-400 outline-none focus:border-gray-600 transition-colors"
             />
             <button
-              class="bg-accent-color hover:brightness-95 text-gray-900 font-semibold text-sm px-5 py-2.5 rounded-full whitespace-nowrap transition-colors"
+              class="bg-accent-color hover:brightness-95 text-gray-900 font-semibold text-sm 2xl:text-base px-5 py-2.5 rounded-full whitespace-nowrap transition-colors"
             >
               Subscribe
             </button>
@@ -57,15 +59,29 @@
         <div class="flex flex-col gap-3">
           <h4 class="text-gray-900 font-semibold text-base">Pages</h4>
           <nav class="flex flex-col gap-2">
-            <a href="#" class="text-gray-600 hover:text-gray-900 text-sm transition-colors">Home</a>
-            <a href="#" class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+            <a
+              href="#"
+              class="text-gray-600 hover:text-gray-900 text-sm 2xl:text-base transition-colors"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 hover:text-gray-900 text-sm 2xl:text-base transition-colors"
               >About us</a
             >
-            <a href="#" class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+            <a
+              href="#"
+              class="text-gray-600 hover:text-gray-900 text-sm 2xl:text-base transition-colors"
               >Program</a
             >
-            <a href="#" class="text-gray-600 hover:text-gray-900 text-sm transition-colors">Blog</a>
-            <a href="#" class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+            <a
+              href="#"
+              class="text-gray-600 hover:text-gray-900 text-sm 2xl:text-base transition-colors"
+              >Blog</a
+            >
+            <a
+              href="#"
+              class="text-gray-600 hover:text-gray-900 text-sm 2xl:text-base transition-colors"
               >Contact us</a
             >
           </nav>
@@ -77,13 +93,13 @@
           <div class="flex flex-col gap-2">
             <a
               href="tel:+1234567890"
-              class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+              class="text-gray-600 hover:text-gray-900 text-sm 2xl:text-base transition-colors"
               >+123-456-7890</a
             >
             <a
               href="tel:+9876543210"
-              class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
-              >+ 987-654-3210</a
+              class="text-gray-600 hover:text-gray-900 text-sm 2xl:text-base transition-colors"
+              >+987-654-3210</a
             >
           </div>
         </div>
@@ -94,12 +110,12 @@
           <div class="flex flex-col gap-2">
             <a
               href="mailto:hello@example.com"
-              class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+              class="text-gray-600 hover:text-gray-900 text-sm 2xl:text-base transition-colors"
               >hello@example.com</a
             >
             <a
               href="mailto:hello@envoria.com"
-              class="text-gray-600 hover:text-gray-900 text-sm transition-colors"
+              class="text-gray-600 hover:text-gray-900 text-sm 2xl:text-base transition-colors"
               >hello@envoria.com</a
             >
           </div>
@@ -113,7 +129,7 @@
       class="section-container mx-auto py-5 flex flex-col sm:flex-row items-center justify-between gap-4"
     >
       <!-- Copyright -->
-      <p class="text-gray-700 text-sm">
+      <p class="text-gray-700 text-sm 2xl:text-base">
         © 2017 - 2026
         <a href="#" class="text-text-primary-color/55 hover:underline font-medium">Envoria™</a>
         All rights reserved.
@@ -132,14 +148,14 @@
             height="16"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="white"
+            stroke="#121212"
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
           >
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
             <circle cx="12" cy="12" r="4" />
-            <circle cx="17.5" cy="6.5" r="1" fill="white" stroke="none" />
+            <circle cx="17.5" cy="6.5" r="1" fill="#121212" stroke="none" />
           </svg>
         </a>
 
