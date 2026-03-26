@@ -63,6 +63,8 @@ onMounted(() => {
           Our Transportation
         </span>
         <h2
+          data-aos="fade-up"
+          data-aos-delay="00"
           class="medium-heading font-medium text-center text-primary-color max-w-[50%] xl:max-w-[28%] mt-10"
         >
           Moving waste smarter,cleaner, and <span class="text-accent-color">faster.</span>
@@ -71,6 +73,8 @@ onMounted(() => {
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0.5 mt-10">
         <div
+          data-aos="fade-up"
+          data-aos-delay="00"
           class="relative group overflow-hidden flex flex-col items-center justify-center text-center gap-2 bg-fourth-color px-8 py-12 rounded-t-lg md:rounded-lg lg:rounded-l-lg lg:rounded-r-none"
         >
           <img src="../../assets/icons/home/hand.svg" alt="" />
@@ -83,6 +87,8 @@ onMounted(() => {
           ></div>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-delay="200"
           class="relative group overflow-hidden flex flex-col items-center justify-center text-center gap-2 bg-fourth-color px-8 py-12 md:rounded-lg lg:rounded-none"
         >
           <img src="../../assets/icons/home/arrow-down.svg" alt="" />
@@ -95,6 +101,8 @@ onMounted(() => {
           ></div>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-delay="400"
           class="relative group overflow-hidden flex flex-col items-center justify-center text-center gap-2 bg-fourth-color px-8 py-12 md:rounded-lg lg:rounded-none"
         >
           <img src="../../assets/icons/home/recycle.svg" alt="" />
@@ -107,6 +115,8 @@ onMounted(() => {
           ></div>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-delay="600"
           class="relative group overflow-hidden flex flex-col items-center justify-center text-center gap-2 bg-fourth-color px-8 py-12 rounded-b-lg md:rounded-lg lg:rounded-r-lg lg:rounded-l-none"
         >
           <img src="../../assets/icons/home/truck.svg" alt="" />

@@ -17,6 +17,8 @@ import ButtonPrimary from '../micro/ButtonPrimary.vue'
         <p class="text-body capitalize">Start your journey</p>
       </span>
       <h1
+        data-aos="fade"
+        data-aos-delay="00"
         class="text-display text-primary-color text-center font-semibold max-w-[90%] lg:max-w-[40%]"
       >
         Join the mission for smarter, cleaner waste movement

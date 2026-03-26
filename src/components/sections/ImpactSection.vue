@@ -83,11 +83,19 @@ onMounted(() => {
           Our Impact</span
         >
         <h2
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="0"
           class="text-display font-medium text-primary-color lg:max-w-[30%] mt-10 xl:max-w-[40%] desktop:max-w-[23%]"
         >
           Numbers that speak for the <span class="text-accent-color">planet.</span>
         </h2>
-        <p class="text-body text-primary-color/55 mt-3 md:max-w-[70%] lg:max-w-[50%]">
+        <p
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          class="text-body text-primary-color/55 mt-3 md:max-w-[70%] lg:max-w-[50%]"
+        >
           Every program, every volunteer, and every tree we plant is living proof that collective
           action reshapes the environment one small step at a time.
         </p>
@@ -95,6 +103,9 @@ onMounted(() => {
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0.5 mt-10">
         <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="00"
           class="relative group flex overflow-hidden flex-col gap-2 bg-fourth-color px-8 py-12 rounded-t-lg md:rounded-lg lg:rounded-l-lg lg:rounded-r-none"
         >
           <h3 class="text-display font-bold text-accent-color">{{ counter1 }}%</h3>
@@ -107,6 +118,9 @@ onMounted(() => {
           ></div>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
           class="relative group flex overflow-hidden flex-col gap-2 bg-fourth-color px-8 py-12 md:rounded-lg lg:rounded-none"
         >
           <h3 class="text-display font-bold text-accent-color">{{ counter2 }}K+</h3>
@@ -119,6 +133,9 @@ onMounted(() => {
           ></div>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="400"
           class="relative group flex overflow-hidden flex-col gap-2 bg-fourth-color px-8 py-12 md:rounded-lg lg:rounded-none"
         >
           <h3 class="text-display font-bold text-accent-color">{{ counter3 }}+</h3>
@@ -131,6 +148,9 @@ onMounted(() => {
           ></div>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="600"
           class="relative group flex overflow-hidden flex-col gap-2 bg-fourth-color px-8 py-12 rounded-b-lg md:rounded-lg lg:rounded-r-lg lg:rounded-l-none"
         >
           <h3 class="text-display font-bold text-accent-color">{{ counter4 }}+ Years</h3>

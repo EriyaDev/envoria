@@ -149,11 +149,7 @@ onMounted(() => {
       <div
         class="section-container mx-auto flex flex-col lg:flex-row lg:items-end lg:justify-between gap-3"
       >
-        <div
-          class="flex w-full flex-row items-end justify-between gap-5"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
+        <div class="flex w-full flex-row items-end justify-between gap-5">
           <div class="flex flex-col gap-3 items-start">
             <span
               class="flex flex-row items-center w-fit px-3 py-1 bg-black/5 text-text-primary-color border border-[#2D612B]/13 text-small rounded-full font-semibold"
@@ -162,10 +158,18 @@ onMounted(() => {
               Trusted by customers
             </span>
             <div class="flex flex-col gap-4">
-              <h2 class="medium-heading font-medium text-text-primary-color mt-10 text-start">
+              <h2
+                data-aos="fade-right"
+                data-aos-delay="00"
+                class="medium-heading font-medium text-text-primary-color mt-10 text-start"
+              >
                 What people say <br />about <span class="text-text-primary-color/55">Envoria</span>
               </h2>
-              <p class="text-body font-medium xl:max-w-[70%] text-[#464646]">
+              <p
+                data-aos="fade-right"
+                data-aos-delay="200"
+                class="text-body font-medium xl:max-w-[70%] text-[#464646]"
+              >
                 We strive to make our waste transport process simple and accessible to every
                 business.
               </p>
@@ -219,7 +223,12 @@ onMounted(() => {
         class="swiper-wrapper mt-10"
       >
         <SwiperSlide v-for="(slide, index) in slides" :key="index">
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" class="h-full w-full">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            :data-aos-delay="index + '00'"
+            class="h-full w-full"
+          >
             <!-- Replace this with your actual slide content -->
             <div class="bg-card-color p-10 rounded-2xl h-96 lg:h-96">
               <div class="flex flex-col justify-between h-full">
